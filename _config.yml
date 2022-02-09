@@ -114,12 +114,3 @@ deploy:
   type: git
   repo: git@github.com:ice641/ice641.github.io.git
   branch: main
-
-#backup
-backup:
-    type: git
-    theme: next
-    message: update my blog
-    repository:
-       github: git@github.com:ice641/ice641.github.io.git,hexo
-       #gitcafe: git@github.com:ice641/ice641.github.io.git,hexo
