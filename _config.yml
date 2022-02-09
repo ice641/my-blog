@@ -122,4 +122,4 @@ backup:
     message: update my blog
     repository:
        github: git@github.com:ice641/ice641.github.io.git,hexo
-       gitcafe: git@github.com:ice641/ice641.github.io.git,hexo
+       #gitcafe: git@github.com:ice641/ice641.github.io.git,hexo
