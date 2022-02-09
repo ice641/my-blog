@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ice641.github.io/2022/02/08/%E6%B5%8B%E8%AF%95/">
+    <link itemprop="mainEntityOfPage" href="https://ice641.github.io/2021/11/21/NOIP%E6%B8%B8%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s4.ax1x.com/2022/02/08/HloutA.jpg">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/02/08/%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">测试</a>
+            <a href="/2021/11/21/NOIP%E6%B8%B8%E8%AE%B0/" class="post-title-link" itemprop="url">NOIP游记</a>
         </h2>
 
         <div class="post-meta">
@@ -216,9 +216,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-08 22:04:21 / 修改时间：22:09:08" itemprop="dateCreated datePublished" datetime="2022-02-08T22:04:21+08:00">2022-02-08</time>
+              <time title="创建时间：2021-11-21 14:52:57" itemprop="dateCreated datePublished" datetime="2021-11-21T14:52:57+08:00">2021-11-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-09 21:00:54" itemprop="dateModified" datetime="2022-02-09T21:00:54+08:00">2022-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">游记</span></a>
+                </span>
             </span>
 
           
@@ -232,24 +247,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p>这里面首先有“向量”这个概念。既有大小又有方向的量称为向量。但是在 OI 中除了 FFT 好像都可以只用坐标表示向量。向量记作 $\vec{a}$ 或 $\mathbf{a}$。</p>
-<p>比如一个二维向量，就可以表示为 $(a,b)$ 的样子。就相当于变化量。当然向量也有多维的，于是 vector 就出现了。一个 $n$  维的向量可以用 $(a_1,a_2,\cdots,a_n)$  表示。用坐标理解这个东西可能好理解些。零向量没有大小，自然也不确定方向，相当于一个点，用 $\mathbf{0}$ 表示，其 $n$ 维坐标都是 $0$。</p>
-<p>向量是可以相加的，变化量可以在这里体现。比如  $\mathbf{a+b}=(a_1+b_1,a_2+b_2,\cdots,a_n+b_n)$，就是每一维相加。相减类似，也是每一维相减，可以理解为 $\mathbf{a+(-b)}$。加的几何意义就是从原点开始按照 $\mathbf{a}$ 平移之后再按照 $\mathbf{b}$  平移。比如一个点 $(x,y)$ 按二维向量 $(a_1,a_2)$ 平移后就会变成  $(x+a_1,y+a_2)$。这个东西可能有图更好理解些……但不好弄（。可以自己画几个图感受一下（，我不太会说（。不过这东西高中会学的。</p>
-<p>向量还可以数乘，就是直接放大一些倍。$k\mathbf{a}=(ka_1,ka_2,\cdots,ka_n)$，然后方向就可能相反，也可能和原来一样。</p>
-<p>两个向量共线就是说这两个线段平行（向量是可以任意平移的，就和线段一样，端点变了但是大小方向不变也是一个向量），用数乘表示就是两个非零向量  $\mathbf{a}$ 与 $\mathbf{b}$ 共线 $\iff$ 有唯一实数 $k$，使得  $k\mathbf{a}=\mathbf{b}$。</p>
-<p>向量的模就是向量的长度也就是向量的大小（明明是一个东西但它就是有一堆词），用 $|\mathbf{a}|$  表示。$|\mathbf{a}|=\sqrt{a_1^2+a_2^2+\cdots+a_n^2}$。（如果我没想错的话。不过这就是两点间距离公式，应该还好，会勾股定理就能推出来）。</p>
-<p>（我为啥说了一堆没用的东西（，接下来才是有用的（</p>
-<h3 id="矩阵及快速幂矩阵的设计"><a href="#矩阵及快速幂矩阵的设计" class="headerlink" title="矩阵及快速幂矩阵的设计"></a>矩阵及快速幂矩阵的设计</h3><p>还有一个东西，叫矩阵。</p>
-<script type="math/tex; mode=display">\begin{bmatrix}a_{1,1}&\cdots&a_{1,m}\\\vdots&\ddots&\vdots\\a_{n,1}&\cdots&a_{n,m}\end{bmatrix}</script><p>这是一个 $n$ 行 $m$ 列的矩阵，你可以当它是一个二维数组。这里我用 $A_n$ 表示 $A$ 的行数，$A_m$ 表示 $A$ 的列数，$A_{i,j}$ 表示 $A$ 中第 $i$ 行第 $j$ 列的元素。</p>
-<p>矩阵的加减要求 $A_n=B_n,A_m=B_m$，即运算的两个矩阵行数和列数相等，然后逐个元素进行。</p>
-<p>矩阵的乘法要求 $A_m=B_n$，即第一个矩阵的列数等于第二个矩阵的行数。然后，设结果为 $C$，那么  $C_{i,j}=\sum_{k=1}^{A_m}A_{i,k}B_{k,j}$。显然  $C_n=A_n,C_m=B_m$。通俗的讲，在矩阵乘法中，$C$ 矩阵的第 $i$ 行第 $j$ 列的数，就是由 $A$ 第 $i$ 行的  $A_m$ 个数与 $B$ 第 $j$ 列的 $A_m$ 个数分别相乘再相加得到的。矩阵乘法没有交换律，但满足结合律。</p>
-<p>接下来是用处，矩阵加速递推。有一个递推式，其中 $k_i$ 给定：</p>
-<script type="math/tex; mode=display">\large{f_i=k_1f_{i-2}+ k_2g_{i-1}+k_3f_{i-1},g_{i}=k_4g_{i-2}+k_5g_{i-1}+k_6f_{i-2}}</script><p>于是思考将它优化至 $\mathrm{O}(\log n)$。我们需要构造一个初始矩阵 $A_2$ 和一个转移矩阵 $B$。$A_i$  需要包含 $f_i,f_{i-1},g_{i},g_{i-1}$，可以写做  <script type="math/tex">\begin{bmatrix}f_i&f_{i-1}&g_i&g_{i-1}\end{bmatrix}</script>。而  $B$ 需要将 $A_{i-1}$ 转移到 $A_i$，可以写做：</p>
-<script type="math/tex; mode=display">\begin{bmatrix}k_3&1&0&0\\k_1&0&k_6&0\\k_2&0&k_5&1\\0&0&k_4&0\end{bmatrix}</script><p>然后答案矩阵为 $A_2B^{n-2}$。它可以写作 $\begin{bmatrix}f_n&amp;f_{n-1}&amp;g_n&amp;g_{n-1}\end{bmatrix}$。注意可以优化的递推式只有常系数（好像是的）。快速构造的方法就是</p>
-<script type="math/tex; mode=display">\begin{bmatrix}&f_i&f_{i-1}&g_i&g_{i-1}\\f_{i-1}&&&&\\f_{i-2}&&&&\\g_{i-1}&&&&\\g_{i-2}&&&&\end{bmatrix}</script><p>然后往里面填数就行。左侧就是矩阵乘法中那个 $A_{i-1}$，而转移后就是上面的一行，也就是要求的 $A_i$。然后快速幂就行。</p>
-<p>矩阵也可以表示变换，方式同上，不细说了。</p>
-<p>例题：Luogu 板子、[NOI2011] 兔农，[NOI2021] 密码箱（还用平衡树）。好了差不多讲完了，可以写题了（？。我相信你们都能做出密码箱的x（。我相信你们也可以花亿些时间探索出兔农的性质然后过了它（</p>
-
+          <p>以 CSP3= 的好成绩进了 NOIp，考前希望能拿了1=，不过现在看来终究是痴人说梦。 $\tiny so \;vegetable$</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/21/NOIP%E6%B8%B8%E8%AE%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -268,7 +274,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ice641.github.io/2022/02/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://ice641.github.io/2021/11/06/CSP%E6%B8%B8%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s4.ax1x.com/2022/02/08/HloutA.jpg">
@@ -282,7 +288,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/02/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/11/06/CSP%E6%B8%B8%E8%AE%B0/" class="post-title-link" itemprop="url">CSP 游记</a>
         </h2>
 
         <div class="post-meta">
@@ -291,9 +297,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-02-08 18:24:53 / 修改时间：21:58:25" itemprop="dateCreated datePublished" datetime="2022-02-08T18:24:53+08:00">2022-02-08</time>
+              <time title="创建时间：2021-11-06 17:05:26" itemprop="dateCreated datePublished" datetime="2021-11-06T17:05:26+08:00">2021-11-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-09 20:26:38" itemprop="dateModified" datetime="2022-02-09T20:26:38+08:00">2022-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">游记</span></a>
+                </span>
             </span>
 
           
@@ -307,10 +328,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <p>我是一个 BJ 初二的小蒟蒻，系统学 OI 一年，之前稀稀拉拉的学过3年。（不过现在看来，之前学的都是一些最简单、基础的东西了）</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/02/08/hello-world/#more" rel="contents">
+              <a class="btn" href="/2021/11/06/CSP%E6%B8%B8%E8%AE%B0/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -402,10 +423,16 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
