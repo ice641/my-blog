@@ -6,6 +6,7 @@ tags:
 - OI
 categories:
 - 游记
+mathjax: true
 ---
 
 以 CSP3= 的好成绩进了 NOIp，考前希望能拿了1=，不过现在看来终究是痴人说梦。 $\tiny so \;vegetable$
