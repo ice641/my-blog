@@ -88,8 +88,8 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: true
-  language: deed.zh
+  post: false
+  language: #deed.zh
 
 
 # ---------------------------------------------------------------
