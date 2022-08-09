@@ -8,6 +8,7 @@ tags:
 categories:
 - 游记
 mathjax: true
+hidden: true
 ---
 
 第二次参加 Noi Online 也是2022年第一次参加 NOI 相关比赛。

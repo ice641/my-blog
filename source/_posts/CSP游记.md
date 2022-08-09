@@ -7,6 +7,7 @@ tags:
 categories:
 - 游记
 mathjax: true
+hidden: true
 ---
 
 我是一个 BJ 初二的小蒟蒻，系统学 OI 一年，之前稀稀拉拉的学过3年。（不过现在看来，之前学的都是一些最简单、基础的东西了）
