@@ -91,7 +91,7 @@ hide_posts:
   #指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见
   #常见的位置有：index, tag, category, archive, sitemap, feed, etc.
   #留空则默认全部隐藏
-  public_generators: []
+  public_generators: [tag,category,archive]
   #为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录
   noindex: true
 
@@ -119,6 +119,13 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+symbols_count_time:
+  symbols: true #是否统计字数
+  time: false #是否统计阅读时长
+  total_symbols: true #是否统计总字数
+  total_time: false #是否统计总阅读时长
+  awl: 2
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
