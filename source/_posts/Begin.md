@@ -1,8 +1,9 @@
 ---
 title: Begin
-date: 2022-02-10 07:38:21
 mathjax: true
 hidden: true
+abbrlink: 1
+date: 2022-02-10 07:38:21
 ---
 
 一个好的开始。

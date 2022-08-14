@@ -1,14 +1,15 @@
 ---
 title: NoiOnline2022游记
-date: 2022-04-03 10:32:07
-update: 2022-04-16 9:56:11
 tags:
-- NOIP
-- OI
+  - NOIP
+  - OI
 categories:
-- 游记
+  - 游记
 mathjax: true
 hidden: true
+abbrlink: 4
+date: 2022-04-03 10:32:07
+update: 2022-04-16 09:56:11
 ---
 
 第二次参加 Noi Online 也是2022年第一次参加 NOI 相关比赛。

@@ -881,8 +881,6 @@ pace:
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
   theme: minimal
 
-canvas_nest:
-  enable: true
 
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js

@@ -1,13 +1,14 @@
 ---
 title: CSP 游记
-date: 2021-11-06 17:05:26
-tags: 
-- CSP
-- OI
+tags:
+  - CSP
+  - OI
 categories:
-- 游记
+  - 游记
 mathjax: true
 hidden: true
+abbrlink: 2
+date: 2021-11-06 17:05:26
 ---
 
 我是一个 BJ 初二的小蒟蒻，系统学 OI 一年，之前稀稀拉拉的学过3年。（不过现在看来，之前学的都是一些最简单、基础的东西了）
