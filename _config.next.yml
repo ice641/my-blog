@@ -54,8 +54,8 @@ darkmode_js:
   right: 'unset' # default: '32px'
   left: '32px' # default: 'unset'
   time: '0.5s' # default: '0.3s'
-  mixColor: 'transparent' # default: '#fff'
-  backgroundColor: 'transparent' # default: '#fff'
+  mixColor: '' # default: '#fff'
+  backgroundColor: '' # default: '#fff'
   buttonColorDark: '#100f2c' # default: '#100f2c'
   buttonColorLight: '#fff' # default: '#fff'
   isActivated: false # default false
@@ -279,7 +279,7 @@ symbols_count_time:
   item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -369,7 +369,7 @@ mobile_layout_economy: false
 
 # Browser header panel color.
 theme_color:
-  light: "#222"
+  light: "#565f89"
   dark: "#222"
 
 # Override browsers' default behavior.
@@ -383,8 +383,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: nord
-    dark: nord
+    light: base16/rebecca
+    dark: base16/rebecca
   prism:
     light: prism
     dark: prism-dark
@@ -392,7 +392,7 @@ codeblock:
   copy_button:
     enable: true
     # Available values: default | flat | mac
-    style: flat
+    style: mac
 
 back2top:
   enable: true
