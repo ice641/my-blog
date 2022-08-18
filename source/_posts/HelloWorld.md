@@ -7,7 +7,7 @@ date: 2022-02-10 07:38:21
 update: 2022-08-18 18:08:31
 ---
 
-`cout << "Hello World!;"`
+`cout << "Hello World!";`
 
 <!-- more -->
 
