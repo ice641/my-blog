@@ -40,8 +40,8 @@ hexo.extend.filter.register('after_generate', () => {
     hexo.route.remove('js/comments-buttons.js');
   }
 
-  if (theme.scheme === 'Pisces' || theme.scheme === 'Gemini') {
-    hexo.route.remove('js/schemes/muse.js');
+  if (theme.sidebar.display === 'remove') {
+    hexo.route.remove('js/sidebar.js');
   }
 
   // Third Party Scripts
@@ -67,12 +67,8 @@ hexo.extend.filter.register('after_generate', () => {
     hexo.route.remove('js/third-party/chat/tidio.js');
   }
 
-  if (!theme.gitter.enable) {
-    hexo.route.remove('js/third-party/chat/gitter.js');
-  }
-
   // Comments
-  if (!theme.changyan.enable || !theme.changyan.appid || !theme.changyan.appkey) {
+  if (!theme.changyan || !theme.changyan.enable || !theme.changyan.appid || !theme.changyan.appkey) {
     hexo.route.remove('js/third-party/comments/changyan.js');
   }
 
@@ -112,6 +108,7 @@ hexo.extend.filter.register('after_generate', () => {
   // Search
   if (!theme.algolia_search.enable) {
     hexo.route.remove('js/third-party/search/algolia-search.js');
+    hexo.route.remove('images/logo-algolia-nebula-blue-full.svg');
   }
 
   if (!theme.local_search.enable) {
@@ -123,7 +120,7 @@ hexo.extend.filter.register('after_generate', () => {
     hexo.route.remove('js/third-party/statistics/firestore.js');
   }
 
-  if (!theme.leancloud_visitors.enable) {
+  if (!theme.leancloud_visitors?.enable) {
     hexo.route.remove('js/third-party/statistics/lean-analytics.js');
   }
 
@@ -134,6 +131,10 @@ hexo.extend.filter.register('after_generate', () => {
 
   if (!theme.pdf.enable) {
     hexo.route.remove('js/third-party/tags/pdf.js');
+  }
+
+  if (!theme.wavedrom.enable) {
+    hexo.route.remove('js/third-party/tags/wavedrom.js');
   }
 
   // Others
@@ -147,9 +148,5 @@ hexo.extend.filter.register('after_generate', () => {
 
   if (!theme.quicklink.enable) {
     hexo.route.remove('js/third-party/quicklink.js');
-  }
-
-  if (!theme.rating.enable) {
-    hexo.route.remove('js/third-party/rating.js');
   }
 });
