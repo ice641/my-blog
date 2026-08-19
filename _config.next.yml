@@ -186,14 +186,14 @@ social_icons:
   transition: false
 
 # Blog rolls
-links_settings:
-  icon: fa fa-globe
-  title: Links
-  # Available values: block | inline
-  layout: block
+# links_settings:
+#   icon: fa fa-globe
+#   title: 友情链接
+#   # Available values: block | inline
+#   layout: block
 
-links:
-  #Title: https://example.com
+# links:
+#   10circle 的小站: https://blog.10circle.moe
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -911,11 +911,6 @@ vendors:
   # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
   custom_cdn_url:
 
-mylinks:
-- nickname: 10circle 的小站
-  avatar: https://blog.10circle.moe/usr/uploads/2022/03/2844749549.jpeg
-  site: https://blog.10circle.moe
-  info: 依铃的胡思乱想存放处
 
 # Assets
 # Accelerate delivery of static files using a CDN
