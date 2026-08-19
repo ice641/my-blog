@@ -70,11 +70,11 @@ darkmode_js:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/雪人.png
-  medium: /images/雪人.png
-  apple_touch_icon: /images/雪人.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /manifest.json
+  small: /images/favicon-16x16-ice.png
+  medium: /images/favicon-32x32-ice.png
+  # apple_touch_icon: /images/favicon-32x32-next.png
+  # safari_pinned_tab: /images/favicon-32x32-next.png
+  # android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.jpg
