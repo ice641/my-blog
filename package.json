@@ -35,6 +35,7 @@
   },
   "allowScripts": {
     "ejs@2.7.4": true,
-    "highlight.js@9.18.5": true
+    "highlight.js@9.18.5": true,
+    "hexo-util@3.3.0": true
   }
 }
