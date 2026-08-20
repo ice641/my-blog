@@ -409,7 +409,7 @@ reading_progress:
   # Available values: top | bottom
   position: top
   reversed: false
-  color: "#7dcfff"
+  color: "#7aa2f7"
   height: 3px
 
 # Bookmark Support
@@ -879,7 +879,7 @@ pace:
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: big-counter
 
 
 # Canvas ribbon

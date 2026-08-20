@@ -91,6 +91,6 @@ mathjax: true
 - nickname: ice641
   avatar: https://s11.ax1x.com/2022/12/24/zvG6m9.png
   site: https://ice641.github.io
-  info: 小冰人的雪地小屋
+  info: 小冰人的冰屋
 ```
 
