@@ -19,6 +19,24 @@ code {
   color: #111111; 
 }
 
+.post-body p a {
+  color: #0593d3;                 // 正常链接颜色
+  border-bottom: 1px solid #0593d3; // 底部下划线颜色（可选）
+  &:hover {
+    color: #fc6423;               // 鼠标悬停时的颜色
+    border-bottom-color: #fc6423; // 悬停时下划线颜色
+  }
+  &:visited {
+    color: #8a8a8a;               // 点击访问过后的颜色（可选）
+  }
+}
+
+.sidebar a {
+  &:hover {
+    color: #7aa2f7;
+  }
+}
+
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
