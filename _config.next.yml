@@ -371,7 +371,7 @@ mobile_layout_economy: false
 theme_color:
   light: "#7aa2f7"
   dark: "#222"
-
+  
 # Override browsers' default behavior.
 body_scrollbar:
   # Place the scrollbar over the content.
