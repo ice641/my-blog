@@ -1,18 +1,18 @@
 ---
-title: fhq-treap笔记
+title: fhq-treap模板
 mathjax: true
 tags:
   - OI
   - 平衡树
 categories:
-  - 笔记
+  - 模板
 hidden: false
 abbrlink: 6
 date: 2022-08-10 14:13:08
 update: 2022-08-10 00:00:00
 ---
 
-放一下自己的板子。
+fhq-treap 模板。
 
 <!--more-->
 
