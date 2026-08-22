@@ -47,7 +47,7 @@ update:
 ## Rammap
 下载地址 : [https://learn.microsoft.com/zh-cn/sysinternals/downloads/rammap](https://learn.microsoft.com/zh-cn/sysinternals/downloads/rammap)
 
-![](/images/rammap.png)
+![](/images/RAMmap.png)
 
 内存管理工具。内存释放效果显著，但不要在重要软件运行时使用。
 
@@ -62,7 +62,7 @@ update:
 ## 小狼毫 (mac Rime)
 下载地址 : [https://rime.im/](https://rime.im/)
 
-![](/images/rime.png)
+![](/images/Rime.png)
 
 Rime 是全平台的输入法软件， windows 上称为小狼毫。
 特点是安装后仅在本地运行，不会接入互联网，没有广告，且可以高度自定义。打开配置文件可以更改输入法的外观、双拼全拼切换、特殊字符输入等。配置难度较高，无图形化界面。
@@ -70,20 +70,20 @@ Rime 是全平台的输入法软件， windows 上称为小狼毫。
 ## TranslucentTB 
 下载地址 : [https://translucenttb.net/](https://translucenttb.net/) ( 也可在微软商店下载 )
 
-![](/images/translucentTB.png)
+![](/images/TranslucentTB.png)
 
 可以使任务栏透明。日常内存占用小。
 
 ## Nexus
 下载地址 : [https://winstep.net.cn/](https://winstep.net.cn/)
 
-![](/images/nexus.png)
+![](/images/Nexus.png)
 
 桌面美化工具。可以让 windows 带有类似于 Mac OS 的 底部 Dock 栏。可以修改位置、透明度等（在最小化等细节处理不如原生 Mac OS）。同样占用小不吃电脑配置。
 
 ## Autohidedesktopicons
 下载地址 : [https://www.softwareok.com/?seite=microsoft/autohidedesktopicons](https://www.softwareok.com/?seite=microsoft/autohidedesktopicons)
 
-![](/images/autohidedesktopicons.png)
+![](/images/AutoHideDesktopicons.png)
 
 可以自动隐藏桌面（任务栏也可）。
